@@ -14,6 +14,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 
+/**
+ * @author Efe
+ *         - here: Spring Boot is only instantiating the web layer, not the whole context
+ *         - ohne die "@SpringBootTest"-Annotation
+ */
+
 @RunWith(SpringRunner.class)
 @WebMvcTest
 public class WebLayerTest
