@@ -4,13 +4,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller
-public class HomeController {
 
-  //Rest Endpoint
-    @RequestMapping("/")
-    public @ResponseBody String greeting() {
-        return "Hello World";
-    }
+@Controller
+public class HomeController
+{
+
+  // Rest Endpoint (ist bei default "GET")
+  @RequestMapping("/")
+  public @ResponseBody String greeting()
+  {
+    return "Hello World";
+  }
 
 }
